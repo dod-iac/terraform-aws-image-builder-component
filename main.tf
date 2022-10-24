@@ -60,4 +60,5 @@ resource "aws_imagebuilder_component" "main" {
   version     = var.component_version
   data        = length(var.data) > 0 ? var.data : null
   uri         = length(var.uri) > 0 ? var.uri : null
+  tags        = var.tagsags
 }
